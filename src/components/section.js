@@ -45,13 +45,13 @@ function renderSectionInputs(details, ind, sectionIndex,props) {
   return (
     <div className="row mb-2">
       <div className="col-4">
-        <CustomInputField placeholder={"Bar Number"} value={details.barNumber} handleOnChange={handleBarNumber}/>
+        <CustomInputField placeholder={"Bar Number"} value={details.barNumber} handleOnChange={handleBarNumber} key={sectionIndex+''+ind} />
       </div>
       <div className="col-4">
-        <CustomInputField placeholder={"Bar Weight"} value={details.barWeight} handleOnChange={handleBarWeight}/>
+        <CustomInputField placeholder={"Bar Weight"} value={details.barWeight} handleOnChange={handleBarWeight} key={sectionIndex+''+ind}/>
       </div>
       <div className="col-4">
-        <CustomInputField placeholder={"Fineness"} value={details.fineness} handleOnChange={handleFineness}/>
+        <CustomInputField placeholder={"Fineness"} value={details.fineness} handleOnChange={handleFineness} key={sectionIndex+''+ind}/>
       </div>
     </div>
   );
